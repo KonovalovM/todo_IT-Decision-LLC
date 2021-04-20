@@ -5,6 +5,7 @@ function done_del(element) {
     ajax.send();
     task_list.innerHTML = ajax.response;
 }
+
 function task(element) {
     var ssylka = element.dataset.ssylka;
     var ajax = new XMLHttpRequest();

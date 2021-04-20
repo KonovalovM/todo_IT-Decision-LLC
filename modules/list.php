@@ -1,9 +1,9 @@
 <?php
-$sth = $pdo->prepare("SELECT * FROM lists");
+    $sth = $pdo->prepare("SELECT * FROM lists");
 
-$sth->setFetchMode(\PDO::FETCH_ASSOC);
-$sth->execute();
-$lists = $sth->fetchAll();
+    $sth->setFetchMode(\PDO::FETCH_ASSOC);
+    $sth->execute();
+    $lists = $sth->fetchAll();
 
 if (isset ($_COOKIE["user_id"])){
     foreach ($lists as $list):

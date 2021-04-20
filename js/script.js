@@ -17,7 +17,6 @@ registrationCloseBtn.onclick = function () {
     registrationForm.style.display = "none";
     }
 
-
 btnSignUp.onclick = function () {
     if (!(pas[0].value == pas[1].value)) {
         alert("Паролі не співпадають!");
@@ -28,5 +27,5 @@ btnSignUp.onclick = function () {
     if ((pas[0].value == pas[1].value)) {
         alert("Вітаємо Вас зареєстровано!");
         registrationForm.style.display = "none";
-        }    
+        }
 }

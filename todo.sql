@@ -9,7 +9,6 @@ password varchar (255),
 position int unsigned,
 time_created timestamp
 );
-
 CREATE table lists (
 id int unsigned primary key auto_increment,
 cat_name varchar (255),

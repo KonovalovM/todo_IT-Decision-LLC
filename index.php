@@ -1,7 +1,5 @@
 <?php
-
 require_once './configs/pdo_ini.php';
-
 ?>
     <!DOCTYPE html>
     <html>

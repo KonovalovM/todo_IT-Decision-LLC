@@ -6,5 +6,3 @@ if (isset($_POST ["email"]) && isset ($_POST ["password"]) && isset ($_POST ["pa
     $sth->setFetchMode(\PDO::FETCH_ASSOC);
     $sth->execute();
 }
-
-
