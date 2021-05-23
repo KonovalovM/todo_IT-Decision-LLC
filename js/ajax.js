@@ -1,15 +1,16 @@
-function done_del(element) {
-    var ssylka = element.dataset.ssylka;
-    var ajax = new XMLHttpRequest();
-    ajax.open("GET", ssylka, false);
-    ajax.send();
-    task_list.innerHTML = ajax.response;
-}
+var form = document.querySelectorAll(".form");
+form.forEach((form) => {
+    form.addEventListener('submit', (sobitye) => {
+        sobitye.preventDefault();
 
-function task(element) {
-    var ssylka = element.dataset.ssylka;
-    var ajax = new XMLHttpRequest();
-    ajax.open("GET", ssylka, false);
-    ajax.send();
-    tasks.innerHTML = ajax.response;
-}
+        var id = form.querySelector("input[name='button_id']");
+        var danni = "&button_id=" + id.value;
+
+        var ajax = new XMLHttpRequest();
+        ajax.open("POST", form.action, false);
+        ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        ajax.send(danni);
+
+    });
+});
+
